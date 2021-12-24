@@ -232,6 +232,43 @@ body{
 .sidebar-mini .sidebar-item-title{
     display: none;
 }
+
+.sidebar-mini .sub-menu-arrow{
+    display: none;
+}
+
+.sidebar-mini .sidebar-item:hover,
+.sidebar-mini .sidebar-item-content:hover,
+.sidebar-mini .sidebar-item-content,
+.sidebar-mini .sidebar-item.btn-sub.active .sidebar-item-content > a{
+    box-shadow: none !important;
+    background: none !important;
+    color: var(--blue-2) !important;
+}
+
+.sidebar-mini .sidebar-item:hover > a{
+    color: var(--blue-2);
+    text-shadow: 1px 2px var(--blue);
+}
+
+.sidebar-mini .collapsing{
+    transition: all 0 !important;
+    display: none;
+}
+
+.sidebar-mini .sidebar-sub-menu{
+    position: fixed;
+    min-width: 14rem;
+    width: 14rem;
+    max-width: 15rem;
+    transform: translate(-5rem, -2.3rem);
+    background: white;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    border: 1px solid var(--white-2);
+    padding-bottom: 1rem !important;
+}
+
 .sidebar-item.btn-sub{
     padding: 0 ;
     cursor: pointer;
