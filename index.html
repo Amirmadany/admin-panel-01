@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="icon" href="assets/images/logo.svg">
+    <link rel="stylesheet" href="assets/font/font.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="header-content">
+           
+            <span class="sidebar-menu">
+                <ion-icon name="menu"></ion-icon>
+            </span>
+
+            <ul class="header-nav-items">
+
+                <li class="header-nav-item">
+
+                    <span class="header-nav-item-link header-nav-item-input d-flex align-items-center active">
+
+                        <form action="" class="search-form d-flex align-items-center">
+                            <input type="text" class="header-input" placeholder="چیزی جستجو کنید">
+
+                            <span class="header-nav-item-icon search">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </span>
+                        </form>
+
+                    </span>
+
+                </li>
+
+                <li class="header-nav-item">
+
+                    <div class="dropdown notif">
+
+                        <button class="header-nav-item-link header-nav-item-btn  dropdown-toggle dropdown-btn" id="notificationBtn"  type="button">
+                            
+                            <span class="header-nav-item-icon header-nav-item-circle-btn">
+                                <ion-icon name="notifications-outline"></ion-icon>
+                            </span>                        
+                            
+                            <div class="header-alert-notification"></div>
+                            
+                        </button>
+
+                        <div class="dropdown-menu notif pt-0 border-0 shadow" aria-labelledby="notificationBtn" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 54px);">
+                            
+                            <div class="dropdown-header dropdown-header-notif">
+                                اعلان ها (8)
+                            </div>
+
+                            <ul class="dropdown-items notif-dropdown-items">
+
+                                <li>
+                                   
+                                    <a href="" class="dropdown-item d-flex align-items-center justify-content-between">
+
+                                        <div class="dropdown-item-icon dropdown-item-icon-message">
+                                            
+                                            <span>
+                                                <ion-icon name="mail-open"></ion-icon>
+                                            </span>
+                                            
+                                        </div>
+
+                                        <span class="dropdown-item-text">
+                                            Ali7586 پیام جدید
+                                        </span>
+
+                                        <div class="dropdown-item-time">
+                                            <span class="badge badge-light">1 hr</span>
+                                        </div>
+
+                                    </a>
+
+                                </li>
+    
+                                <li>
+                                   
+                                    <a href="" class="dropdown-item d-flex align-items-center justify-content-between">
+
+                                        <div class="dropdown-item-icon dropdown-item-icon-signed">
+                                            
+                                            <span>
+                                                <ion-icon name="person-add"></ion-icon>
+                                            </span>
+                                            
+                                        </div>
+
+                                        <span class="dropdown-item-text">
+                                            ثبت نام کرد Arman86csacacacscacacacscac9s
+                                        </span>
+
+
+                                        <div class="dropdown-item-time">
+                                            <span class="badge badge-light">1 hr</span>
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                   
+                                    <a href="" class="dropdown-item d-flex align-items-center justify-content-between">
+
+                                        <div class="dropdown-item-icon dropdown-item-icon-buy">
+                                            
+                                            <span>
+                                                <ion-icon name="cash"></ion-icon>
+                                            </span>
+                                            
+                                        </div>
+
+                                        <span class="dropdown-item-text">
+                                            تراکنش دوره پرمیوم ویو
+                                        </span>
+
+                                        <div class="dropdown-item-time">
+                                            <span class="badge badge-light">1 hr</span>
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                                <li>
+                                   
+                                    <a href="" class="dropdown-item d-flex align-items-center justify-content-between">
+
+                                        <div class="dropdown-item-icon dropdown-item-icon-signed">
+                                            
+                                            <span>
+                                                <ion-icon name="person-add"></ion-icon>
+                                            </span>
+                                            
+                                        </div>
+
+                                        <span class="dropdown-item-text">
+                                            ثبت نام کرد Hasan86s
+                                        </span>
+
+
+                                        <div class="dropdown-item-time">
+                                            <span class="badge badge-light">1 hr</span>
+                                        </div>
+
+                                    </a>
+
+                                </li>
+
+                            </ul>
+
+                            <div class="dropdown-footer">
+
+                                <button class="dropdown-footer-btn"> 
+                                                                       
+                                    <span> نمایش بیشتر </span> 
+
+                                </button>
+
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="header-nav-item">
+
+                    <div class="dropdown account">
+                        
+                        <button class="header-nav-item-btn header-nav-item-btn-custom" id="dropdownAccount">
+
+                            <div class="header-nav-item-user-image">
+                                <img src="assets/images/user-pic.jpg" alt="">
+                            </div>
+    
+                        </button>
+
+                        <div class="dropdown-menu pt-0 account border-0" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 54px);" aria-labelledby="dropdownAccount">
+                            
+                            <div class="dropdown-header dropdown-account">
+                                
+                                <div class="dropdown-header-user-image">
+                                    <img src="assets/images/user-pic.jpg" alt="">
+                                </div>
+
+                                <div class="dropdown-header-user-info">
+
+                                    <span class="dropdown-header-user-name">  
+                                        <span> Amirmadany </span>
+                                        <span class="badge badge-green"> Pro </span>
+                                    </span>
+
+                                    <span class="dropdown-header-user-email"> Amirhosein@gmail.com </span>
+
+                                </div>
+
+                            </div>
+                            
+                            <div class="dropdown-content">
+                                
+                                <ul class="dropdown-items-account dropdown-items">
+
+                                    <li>
+                                        
+                                        <a href="" class="dropdown-item">
+                                            پروفایل من
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+                                        
+                                        <a href="" class="dropdown-item">
+                                            <span class="badge badge-red"> 5 </span> دوره های من
+                                        </a>
+
+                                    </li>
+
+                                    <li class="dropdown-has-sub">
+                                        
+                                        <span href="" class="dropdown-item d-flex align-content-center justify-content-between">
+                                        
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        
+                                            <span>دانشجویان من</span>
+                                        
+                                        </span>
+                                        
+                                        <ul class="dropdown-sub-menu-items"> 
+
+                                            <li class="">
+                                                
+                                                <a href="" class="dropdown-item-sub">
+                                                    ارجاعات
+                                                </a>
+
+                                            </li>
+
+                                            <li class="">
+                                                
+                                                <a href="" class="dropdown-item-sub d-flex align-content-center justify-content-between">
+                                                    
+                                                    <span class="dropdown-sub-item-icon">
+                                                        <ion-icon name="cash-outline"></ion-icon>
+                                                    </span>
+                                                    <span>پرداخت ها</span>
+
+                                                </a>
+
+                                            </li>
+                                            
+                                            <li class="">
+                                                
+                                                <a href="" class="dropdown-item-sub">
+                                                    بدهی ها
+                                                </a>
+
+                                            </li>
+
+                                            <li class="">
+                                                
+                                                <a href="" class="dropdown-item-sub d-flex align-content-center justify-content-between">
+                                                    
+                                                    <span class="dropdown-sub-item-icon">
+                                                        <ion-icon name="information-circle"></ion-icon>
+                                                    </span>
+                                                    <span>پیام ها</span>
+
+                                                </a>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li>
+                                        
+                                        <a href="" class="dropdown-item">
+                                            مطالب من
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                                <ul class="dropdown-items-account dropdown-items">
+
+                                    <li class="dropdown-has-sub">
+                                        
+                                        <span href="" class="dropdown-item d-flex align-content-center justify-content-between">
+                                            
+                                            <div class="header-language-selected d-flex align-content-center">  
+
+                                                <div class="header-language-image">
+                                                    <img src="assets/images/united-states.svg" alt="">
+                                                </div>
+
+                                                فارسی 
+                                            
+                                            </div>
+
+                                            <span>زبان</span>
+
+                                        </span>
+
+                                        <ul class="dropdown-sub-menu-items"> 
+
+                                            <li class="">
+                                                
+                                                <a href="" class="dropdown-item-sub active d-flex align-content-center justify-content-between">
+                                                    
+                                                    <span class="header-language-image">
+                                                        <img src="assets/images/united-states.svg" alt="">
+                                                    </span>
+
+                                                    <span>انگلیسی</span>
+
+                                                </a>
+
+                                            </li>
+
+                                            <li class="">
+                                                
+                                                <a href="" class="dropdown-item-sub d-flex align-content-center justify-content-between">
+                                                    
+                                                    <span class="header-language-image">
+                                                        <img src="assets/images/Flag_of_Iran.svg" alt="">
+                                                    </span>
+
+                                                    <span>فارسی</span>
+
+                                                </a>
+
+                                            </li>
+
+                                            <li class="">
+                                                
+                                                <a href="" class="dropdown-item-sub d-flex align-content-center justify-content-between">
+                                                    
+                                                    <span class="header-language-image">
+                                                        <img src="assets/images/germany.svg" alt="">
+                                                    </span>
+
+                                                    <span>آلمانی</span>
+
+                                                </a>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </li>
+
+                                    <li>
+                                        
+                                        <a href="" class="dropdown-item">
+                                            تنظیمات اکانت
+                                        </a>
+
+                                    </li>
+
+                                    <li>
+                                        
+                                        <a href="" class="dropdown-item">
+                                            خروج
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                            <div class="dropdown-footer-account d-flex align-content-center justify-content-center">
+
+                                <span class="ms-3"> حالت شب </span>
+                                <input type="checkbox" class="checkbox-toggle">
+
+                            </div>
+
+                        </div>
+
+                    </divc>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="search-box">
+            
+            <div class="search-box-content">
+
+                <form action="" class="search-form d-flex align-items-center justify-content-between">
+                
+                    <input type="text" class="header-input" placeholder="چیزی جستجو کنید">
+    
+                    <span class="header-nav-item-icon close-search">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </span>
+    
+                </form>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <aside class="sidebar">
+
+        <div class="sidebar-brand">
+
+            <img src="assets/images/logo.svg" alt="">
+
+        </div>
+
+        <div class="sidebar-content">
+
+            <ul class="sidebar-items">
+
+                <li class="sidebar-item active">
+                    
+                   <a href="">
+                    
+                        <span class="sidebar-item-icon">
+                            <ion-icon name="grid-outline"></ion-icon>
+                        </span>
+
+                        <span class="sidebar-item-title"> داشبورد </span>
+                   
+                    </a>
+
+                </li>
+
+                <li class="sidebar-item btn-sub">
+                    
+                    <div class="sidebar-item-content btn-toggle d-flex align-content-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#users-collapse">  
+
+                        <a href="">
+                        
+                            <span class="sidebar-item-icon">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </span>
+        
+                            <span class="sidebar-item-title"> کاربران </span>
+    
+                        </a>
+    
+                        <div class="sub-menu-arrow">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+
+                    </div>
+
+                    <div class="collapse" id="users-collapse">
+                        
+                        <div>
+                            <ul class="sidebar-sub-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            
+                            <li>
+                                <a href="#users" class="link-dark rounded">
+                                    
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                    <span class="sidebar-sub-menu-text">لیست کاربران</span>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="csacscaccsc" class="link-dark rounded">
+                                    
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                    <span class="sidebar-sub-menu-text">ایجاد</span>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="csacscaccsc" class="link-dark rounded">
+                                    
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                    <span class="sidebar-sub-menu-text">تغییر گذرواژه</span>
+
+                                </a>
+                            </li>
+                          
+                        </ul>
+                        </div>
+
+                    </div>
+
+                </li>
+
+                <li class="sidebar-item">
+                    
+                    <a href="">
+                        <span class="sidebar-item-icon">
+                            <ion-icon name="albums-outline"></ion-icon>
+                        </span>
+    
+                        <span class="sidebar-item-title"> دوره ها </span>
+                    </a>
+
+                </li>
+
+                <li class="sidebar-item btn-sub">
+                    
+                    <div class="sidebar-item-content btn-toggle d-flex align-content-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#posts-collapse">  
+
+                        <a href="">
+                        
+                            <span class="sidebar-item-icon">
+                                <ion-icon name="file-tray-full-outline"></ion-icon>
+                            </span>
+        
+                            <span class="sidebar-item-title"> مطالب </span>
+    
+                        </a>
+    
+                        <div class="sub-menu-arrow">
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+
+                    </div>
+
+                    <div class="collapse" id="posts-collapse">
+                        
+                        <ul class="sidebar-sub-menu btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            
+                            <li>
+                                <a href="#users" class="link-dark rounded">
+                                    
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                    <span class="sidebar-sub-menu-text">لیست مطالب</span>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="csacscaccsc" class="link-dark rounded">
+                                    
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                    <span class="sidebar-sub-menu-text">ایجاد مطلب</span>
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="csacscaccsc" class="link-dark rounded">
+                                    
+                                    <ion-icon name="remove-outline"></ion-icon>
+                                    <span class="sidebar-sub-menu-text">پیش نویس ها</span>
+
+                                </a>
+                            </li>
+                          
+                        </ul>
+
+                    </div>
+
+                </li>
+
+                <li class="sidebar-item">
+                    
+                    <a href="">
+                        <span class="sidebar-item-icon">
+                            <ion-icon name="logo-web-component"></ion-icon>
+                        </span>
+    
+                        <span class="sidebar-item-title"> بخش ها </span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <div class="spliter-footer">
+            </div>
+
+            <div class="sidebar-footer">
+                
+                <a href="" class="active">
+                    <span class="sidebar-footer-icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                </a>
+
+                <a href="">
+                    <span class="sidebar-footer-icon">
+                        <ion-icon name="exit-outline"></ion-icon>
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main>
+
+        
+
+    </main>
+
+    <div class="backdrop"></div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+</body>
+</html>
