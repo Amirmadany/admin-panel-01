@@ -1,0 +1,11 @@
+.content{
+    transform: translateX(-25rem);
+    margin-top: 9rem;
+    width: calc(100% - 27rem);
+    transition: all 0.3s;
+}
+
+.content.full-content{
+    width: calc(100% - 13rem);
+    transform: translateX(-12rem);
+}

@@ -1,0 +1,10 @@
+@media (max-width: 61.9375rem){
+
+    .content,
+    .content.full-content{
+        width: 100%;
+        transform: translate(0);
+        padding: 0 1rem;
+    }
+
+}
