@@ -29,7 +29,7 @@ body.dark .header-nav-item-icon.search{
 
 body.dark .header-nav-item-icon{
     background: var(--black-5);
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+    /* box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4); */
     color: var(--white-4);
 }
 
@@ -156,11 +156,12 @@ body.dark .sidebar .sidebar-item.active a{
 }
 
 body.dark .sidebar .sidebar-item:hover{
-    background: var(--black-5);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5) !important;
+    background: var(--background-dark-section);
 }
 
 body.dark .sidebar .sidebar-item:hover a{
-    background: var(--black-5);
+    background: var(--background-dark-section);
 }
 
 body.dark .sidebar .sidebar-item.active:hover{
